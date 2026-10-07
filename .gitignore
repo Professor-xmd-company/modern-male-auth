@@ -1,0 +1,8 @@
+node_modules
+.next
+.playwright-mcp
+test-results
+playwright-report
+/tmp
+*.log
+.env*.local

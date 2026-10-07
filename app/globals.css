@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #121416;
+  --foreground: #E2E4E7;
+  --border-slate: #2A2E33;
+  --bronze-accent: #B87333;
+  --bronze-hover: #C9854A;
+  --copper-error: #9E4739;
+}
+
+body {
+  background-color: #121416;
+  color: #E2E4E7;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Enforce zero border-radius on inputs and buttons */
+input,
+button {
+  border-radius: 0 !important;
+}
+
+@layer utilities {
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px #121416 inset !important;
+    -webkit-text-fill-color: #E2E4E7 !important;
+    caret-color: #E2E4E7 !important;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+}
